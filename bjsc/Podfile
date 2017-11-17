@@ -1,0 +1,15 @@
+platform :ios, '10.0'
+target 'bjsc' do
+pod 'AFNetworking', '~> 3.1.0'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'RDVTabBarController'
+pod 'MKNetworkKit'
+pod 'RegexKitLite'
+pod 'Reachability'
+pod 'MBProgressHUD'
+pod 'ASIHTTPRequest', '~> 1.8.2'
+pod 'libextobjc'
+pod 'MJExtension'
+pod 'Masonry'
+end
