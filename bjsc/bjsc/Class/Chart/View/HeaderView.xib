@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -54,28 +54,27 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="6Up-ji-I06" firstAttribute="leading" secondItem="0Jv-lS-yRm" secondAttribute="trailing" constant="5" id="1IR-PE-WEJ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wlX-1m-QYA" secondAttribute="trailing" constant="5" id="3df-Np-8Jy"/>
-                <constraint firstItem="6Up-ji-I06" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="87d-se-yOI"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6Up-ji-I06" secondAttribute="bottom" constant="5" id="8fb-OG-Ggo"/>
+                <constraint firstAttribute="trailing" secondItem="wlX-1m-QYA" secondAttribute="trailing" constant="5" id="3df-Np-8Jy"/>
+                <constraint firstItem="6Up-ji-I06" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="87d-se-yOI"/>
+                <constraint firstAttribute="bottom" secondItem="6Up-ji-I06" secondAttribute="bottom" constant="5" id="8fb-OG-Ggo"/>
                 <constraint firstItem="0Jv-lS-yRm" firstAttribute="leading" secondItem="AHu-6H-l7U" secondAttribute="trailing" constant="5" id="CZ5-id-asB"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0Jv-lS-yRm" secondAttribute="bottom" constant="5" id="CoA-bd-RYB"/>
+                <constraint firstAttribute="bottom" secondItem="0Jv-lS-yRm" secondAttribute="bottom" constant="5" id="CoA-bd-RYB"/>
                 <constraint firstItem="wlX-1m-QYA" firstAttribute="width" secondItem="AHu-6H-l7U" secondAttribute="width" id="JOQ-Ik-uMB"/>
                 <constraint firstItem="wlX-1m-QYA" firstAttribute="leading" secondItem="Jou-bd-6qw" secondAttribute="trailing" constant="5" id="JXF-qu-33m"/>
                 <constraint firstItem="Jou-bd-6qw" firstAttribute="width" secondItem="AHu-6H-l7U" secondAttribute="width" id="Jdr-YE-WXH"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wlX-1m-QYA" secondAttribute="bottom" constant="5" id="K6n-ok-WHA"/>
-                <constraint firstItem="AHu-6H-l7U" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="Kfe-1F-jvG"/>
+                <constraint firstAttribute="bottom" secondItem="wlX-1m-QYA" secondAttribute="bottom" constant="5" id="K6n-ok-WHA"/>
+                <constraint firstItem="AHu-6H-l7U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Kfe-1F-jvG"/>
                 <constraint firstItem="0Jv-lS-yRm" firstAttribute="width" secondItem="AHu-6H-l7U" secondAttribute="width" id="MTD-Cg-yOn"/>
-                <constraint firstItem="Jou-bd-6qw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="MqX-8Q-Zgl"/>
+                <constraint firstItem="Jou-bd-6qw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="MqX-8Q-Zgl"/>
                 <constraint firstItem="6Up-ji-I06" firstAttribute="width" secondItem="AHu-6H-l7U" secondAttribute="width" id="QqA-Gn-tCX"/>
-                <constraint firstItem="AHu-6H-l7U" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="TAJ-Sf-gho"/>
+                <constraint firstItem="AHu-6H-l7U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="TAJ-Sf-gho"/>
                 <constraint firstItem="Jou-bd-6qw" firstAttribute="leading" secondItem="6Up-ji-I06" secondAttribute="trailing" constant="5" id="V9I-Ez-kN1"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Jou-bd-6qw" secondAttribute="bottom" constant="5" id="g8F-3R-Orm"/>
-                <constraint firstItem="0Jv-lS-yRm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="kUU-67-cPb"/>
-                <constraint firstItem="wlX-1m-QYA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="q8B-wN-xYu"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AHu-6H-l7U" secondAttribute="bottom" constant="5" id="vvy-Fp-uil"/>
+                <constraint firstAttribute="bottom" secondItem="Jou-bd-6qw" secondAttribute="bottom" constant="5" id="g8F-3R-Orm"/>
+                <constraint firstItem="0Jv-lS-yRm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="kUU-67-cPb"/>
+                <constraint firstItem="wlX-1m-QYA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="q8B-wN-xYu"/>
+                <constraint firstAttribute="bottom" secondItem="AHu-6H-l7U" secondAttribute="bottom" constant="5" id="vvy-Fp-uil"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="42" y="-379"/>
         </view>
     </objects>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tXF-ZN-FQF">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cne-ga-0P6">
                         <size key="itemSize" width="50" height="50"/>
@@ -37,12 +37,11 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="tXF-ZN-FQF" secondAttribute="bottom" id="dsa-cF-BQ9"/>
-                <constraint firstItem="tXF-ZN-FQF" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="eF7-AG-ITu"/>
-                <constraint firstItem="tXF-ZN-FQF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="v08-U1-bgD"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="tXF-ZN-FQF" secondAttribute="trailing" id="wxb-qz-s3M"/>
+                <constraint firstAttribute="bottom" secondItem="tXF-ZN-FQF" secondAttribute="bottom" id="dsa-cF-BQ9"/>
+                <constraint firstItem="tXF-ZN-FQF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eF7-AG-ITu"/>
+                <constraint firstItem="tXF-ZN-FQF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v08-U1-bgD"/>
+                <constraint firstAttribute="trailing" secondItem="tXF-ZN-FQF" secondAttribute="trailing" id="wxb-qz-s3M"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
 </document>

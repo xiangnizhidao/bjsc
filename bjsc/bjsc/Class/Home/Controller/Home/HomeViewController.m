@@ -36,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self creatCollection];
-    self.title = @"历史数据";
+
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -47,6 +47,11 @@
 
 - (void)creatCollection {
     //布局
+    self.title = @"历史数据";
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+    backItem.title = @"";
+    self.navigationItem.backBarButtonItem = backItem;
+    
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setItemSize:CGSizeMake((SCREEN_WIDTH - 2) / 3, 160)];
     flowLayout.minimumInteritemSpacing = 1;

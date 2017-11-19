@@ -29,6 +29,9 @@
 		0C1647E11FC00FD400BC4B4D /* HomeDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1647DF1FC00FD400BC4B4D /* HomeDetailsTableViewCell.xib */; };
 		0C1647E31FC037F800BC4B4D /* homeData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C1647E21FC037F800BC4B4D /* homeData.plist */; };
 		0C1647E61FC043F600BC4B4D /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1647E51FC043F600BC4B4D /* HomeModel.m */; };
+		0C9B31681FC14F4F00ED7851 /* HomeDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9B31671FC14F4F00ED7851 /* HomeDetailsModel.m */; };
+		0C9B31711FC1684400ED7851 /* HomeDetailsTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9B316F1FC1684400ED7851 /* HomeDetailsTwoTableViewCell.m */; };
+		0C9B31721FC1684400ED7851 /* HomeDetailsTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9B31701FC1684400ED7851 /* HomeDetailsTwoTableViewCell.xib */; };
 		0CA438BB1FBFD4A700AFACB0 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA438B91FBFD4A700AFACB0 /* HomeCollectionViewCell.m */; };
 		0CA438BC1FBFD4A700AFACB0 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA438BA1FBFD4A700AFACB0 /* HomeCollectionViewCell.xib */; };
 		0CA438C51FBFDAA800AFACB0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA438C31FBFDAA800AFACB0 /* HomeViewController.m */; };
@@ -81,6 +84,11 @@
 		0C1647E21FC037F800BC4B4D /* homeData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = homeData.plist; sourceTree = "<group>"; };
 		0C1647E41FC043F600BC4B4D /* HomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		0C1647E51FC043F600BC4B4D /* HomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		0C9B31661FC14F4F00ED7851 /* HomeDetailsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeDetailsModel.h; sourceTree = "<group>"; };
+		0C9B31671FC14F4F00ED7851 /* HomeDetailsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeDetailsModel.m; sourceTree = "<group>"; };
+		0C9B316E1FC1684400ED7851 /* HomeDetailsTwoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeDetailsTwoTableViewCell.h; sourceTree = "<group>"; };
+		0C9B316F1FC1684400ED7851 /* HomeDetailsTwoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeDetailsTwoTableViewCell.m; sourceTree = "<group>"; };
+		0C9B31701FC1684400ED7851 /* HomeDetailsTwoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailsTwoTableViewCell.xib; sourceTree = "<group>"; };
 		0CA438B81FBFD4A700AFACB0 /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
 		0CA438B91FBFD4A700AFACB0 /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
 		0CA438BA1FBFD4A700AFACB0 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -206,6 +214,9 @@
 				0C1647DD1FC00FD400BC4B4D /* HomeDetailsTableViewCell.h */,
 				0C1647DE1FC00FD400BC4B4D /* HomeDetailsTableViewCell.m */,
 				0C1647DF1FC00FD400BC4B4D /* HomeDetailsTableViewCell.xib */,
+				0C9B316E1FC1684400ED7851 /* HomeDetailsTwoTableViewCell.h */,
+				0C9B316F1FC1684400ED7851 /* HomeDetailsTwoTableViewCell.m */,
+				0C9B31701FC1684400ED7851 /* HomeDetailsTwoTableViewCell.xib */,
 			);
 			path = HomeDetails;
 			sourceTree = "<group>";
@@ -244,6 +255,8 @@
 			children = (
 				0C1647E41FC043F600BC4B4D /* HomeModel.h */,
 				0C1647E51FC043F600BC4B4D /* HomeModel.m */,
+				0C9B31661FC14F4F00ED7851 /* HomeDetailsModel.h */,
+				0C9B31671FC14F4F00ED7851 /* HomeDetailsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -404,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9B31721FC1684400ED7851 /* HomeDetailsTwoTableViewCell.xib in Resources */,
 				0C1647D61FC00EA100BC4B4D /* HomeDetailsViewController.xib in Resources */,
 				0980F5D11FC1163800714528 /* LSTitleContentTableViewCell.xib in Resources */,
 				0CA438BC1FBFD4A700AFACB0 /* HomeCollectionViewCell.xib in Resources */,
@@ -481,6 +495,7 @@
 			files = (
 				0C1647E61FC043F600BC4B4D /* HomeModel.m in Sources */,
 				0980F5CD1FC1163800714528 /* BSRefreshFooter.m in Sources */,
+				0C9B31711FC1684400ED7851 /* HomeDetailsTwoTableViewCell.m in Sources */,
 				243EFCAA1FBD30E300DB995A /* ViewController.m in Sources */,
 				0980F5D01FC1163800714528 /* LSTitleContentTableViewCell.m in Sources */,
 				243EFCB51FBD30E300DB995A /* main.m in Sources */,
@@ -496,6 +511,7 @@
 				0980F5CF1FC1163800714528 /* BSTitleInputTableViewCell.m in Sources */,
 				0980F5AB1FC114BE00714528 /* ChartViewController.m in Sources */,
 				0980F5C91FC1163800714528 /* BSPageControl.m in Sources */,
+				0C9B31681FC14F4F00ED7851 /* HomeDetailsModel.m in Sources */,
 				0980F5CC1FC1163800714528 /* BSTextView.m in Sources */,
 				0980F5CA1FC1163800714528 /* BSTableViewCell.m in Sources */,
 				0C1647E01FC00FD400BC4B4D /* HomeDetailsTableViewCell.m in Sources */,
@@ -642,6 +658,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/bjsc/PrefixHeader.pch";
 				INFOPLIST_FILE = bjsc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjsc.www.bjsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,6 +680,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/bjsc/PrefixHeader.pch";
 				INFOPLIST_FILE = bjsc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjsc.www.bjsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
