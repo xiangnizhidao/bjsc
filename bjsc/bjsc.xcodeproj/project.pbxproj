@@ -20,6 +20,9 @@
 		0980F5CF1FC1163800714528 /* BSTitleInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980F5BE1FC1163800714528 /* BSTitleInputTableViewCell.m */; };
 		0980F5D01FC1163800714528 /* LSTitleContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980F5C01FC1163800714528 /* LSTitleContentTableViewCell.m */; };
 		0980F5D11FC1163800714528 /* LSTitleContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0980F5C11FC1163800714528 /* LSTitleContentTableViewCell.xib */; };
+		0980F5D41FC121C300714528 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980F5D31FC121C300714528 /* HeaderView.m */; };
+		0980F5D61FC121D500714528 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0980F5D51FC121D500714528 /* HeaderView.xib */; };
+		0980F5D91FC1243400714528 /* XXNibBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980F5D81FC1243400714528 /* XXNibBridge.m */; };
 		0C1647D51FC00EA100BC4B4D /* HomeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1647D31FC00EA100BC4B4D /* HomeDetailsViewController.m */; };
 		0C1647D61FC00EA100BC4B4D /* HomeDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1647D41FC00EA100BC4B4D /* HomeDetailsViewController.xib */; };
 		0C1647E01FC00FD400BC4B4D /* HomeDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1647DE1FC00FD400BC4B4D /* HomeDetailsTableViewCell.m */; };
@@ -64,6 +67,11 @@
 		0980F5C21FC1163800714528 /* BSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTextView.h; sourceTree = "<group>"; };
 		0980F5C31FC1163800714528 /* BSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSButton.h; sourceTree = "<group>"; };
 		0980F5C51FC1163800714528 /* BSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBarController.h; sourceTree = "<group>"; };
+		0980F5D21FC121C300714528 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		0980F5D31FC121C300714528 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		0980F5D51FC121D500714528 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		0980F5D71FC1243400714528 /* XXNibBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibBridge.h; sourceTree = "<group>"; };
+		0980F5D81FC1243400714528 /* XXNibBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibBridge.m; sourceTree = "<group>"; };
 		0C1647D21FC00EA100BC4B4D /* HomeDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeDetailsViewController.h; sourceTree = "<group>"; };
 		0C1647D31FC00EA100BC4B4D /* HomeDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeDetailsViewController.m; sourceTree = "<group>"; };
 		0C1647D41FC00EA100BC4B4D /* HomeDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailsViewController.xib; sourceTree = "<group>"; };
@@ -139,6 +147,9 @@
 		0980F5A71FC1147200714528 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0980F5D21FC121C300714528 /* HeaderView.h */,
+				0980F5D31FC121C300714528 /* HeaderView.m */,
+				0980F5D51FC121D500714528 /* HeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +260,8 @@
 		0CA438AF1FBFD1C900AFACB0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				0980F5D71FC1243400714528 /* XXNibBridge.h */,
+				0980F5D81FC1243400714528 /* XXNibBridge.m */,
 				0C1647E21FC037F800BC4B4D /* homeData.plist */,
 			);
 			path = Other;
@@ -394,6 +407,7 @@
 				0C1647D61FC00EA100BC4B4D /* HomeDetailsViewController.xib in Resources */,
 				0980F5D11FC1163800714528 /* LSTitleContentTableViewCell.xib in Resources */,
 				0CA438BC1FBFD4A700AFACB0 /* HomeCollectionViewCell.xib in Resources */,
+				0980F5D61FC121D500714528 /* HeaderView.xib in Resources */,
 				243EFCB21FBD30E300DB995A /* LaunchScreen.storyboard in Resources */,
 				0C1647E31FC037F800BC4B4D /* homeData.plist in Resources */,
 				0980F5AC1FC114BE00714528 /* ChartViewController.xib in Resources */,
@@ -474,8 +488,10 @@
 				0980F5CE1FC1163800714528 /* BSRefreshHeader.m in Sources */,
 				0CA438C51FBFDAA800AFACB0 /* HomeViewController.m in Sources */,
 				0980F5C71FC1163800714528 /* BSTabBarController.m in Sources */,
+				0980F5D91FC1243400714528 /* XXNibBridge.m in Sources */,
 				0C1647D51FC00EA100BC4B4D /* HomeDetailsViewController.m in Sources */,
 				0CA438BB1FBFD4A700AFACB0 /* HomeCollectionViewCell.m in Sources */,
+				0980F5D41FC121C300714528 /* HeaderView.m in Sources */,
 				0980F5C61FC1163800714528 /* BSViewController.m in Sources */,
 				0980F5CF1FC1163800714528 /* BSTitleInputTableViewCell.m in Sources */,
 				0980F5AB1FC114BE00714528 /* ChartViewController.m in Sources */,
