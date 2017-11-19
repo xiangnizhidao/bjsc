@@ -64,23 +64,22 @@
     UIViewController *rootViewController = navigationController.viewControllers.firstObject;
     
     if (viewController != rootViewController) {
-        if (self.number == 0) {
-            self.tabBar.hidden = YES;
-            
-            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-            [[[delegate.window.subviews objectAtIndex:0] subviews] objectAtIndex:0].frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-            self.number ++;
-        }else{
-            self.tabBar.hidden = YES;
+//        if (self.number == 0) {
+//            [self setTabBarHidden:YES];
+//
+//            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//            [[[delegate.window.subviews objectAtIndex:0] subviews] objectAtIndex:0].frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+//        }else{
+            [self setTabBarHidden:YES];
             
             viewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
             navigationController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
             AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
             [[[delegate.window.subviews objectAtIndex:0] subviews] objectAtIndex:0].frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-        }
+//        }
     } else {
         
-        self.tabBar.hidden = NO;
+        [self setTabBarHidden:NO];
         
     }
     
@@ -157,19 +156,11 @@
 
 - (void)setUpModeTabBar
 {
-    UIImage *finishedImage = [UIImage imageNamed:@"tab_bg"];
-    UIImage *unfinishedImage = [UIImage imageNamed:@"tab_bg"];
     
     NSArray *tabNamesArray = @[@"历史数据", @"走势图"];
-//    NSArray *tabBarItemImages = @[];
 
     NSInteger index = 0;
     for (RDVTabBarItem *item in [self.tabBar items]) {
-
-//        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
-//        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_press",[tabBarItemImages objectAtIndex:index]]];
-//        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_n",[tabBarItemImages objectAtIndex:index]]];
-//        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
         
         item.unselectedTitleAttributes = @{NSFontAttributeName: GetFont(14), NSForegroundColorAttributeName:RGBCOLORV(0xb6b5b6)};
         item.selectedTitleAttributes = @{NSFontAttributeName: GetFont(14),NSForegroundColorAttributeName:DefaultBackgroundColor};

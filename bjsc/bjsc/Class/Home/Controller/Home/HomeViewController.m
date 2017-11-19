@@ -54,7 +54,6 @@
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     [self.collectV setCollectionViewLayout:flowLayout];
     [self.collectV registerNib:[UINib nibWithNibName:@"HomeCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"HomeCollectionViewCell"];
-
 }
 
 #pragma mark ------ collection
