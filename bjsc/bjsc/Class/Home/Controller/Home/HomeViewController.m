@@ -36,6 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self creatCollection];
+    self.title = @"历史数据";
     // Do any additional setup after loading the view from its nib.
 }
 
