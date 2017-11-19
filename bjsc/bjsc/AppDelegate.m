@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
+#import "BSTabBarController.h"
 
 
 @interface AppDelegate ()
@@ -18,9 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    HomeViewController *homeV = [[HomeViewController alloc] init];
-    UINavigationController *nh = [[UINavigationController alloc] initWithRootViewController:homeV];
-    self.window.rootViewController = nh;
+    
+    BSTabBarController *viewController = [[BSTabBarController alloc] init];
+    self.window.rootViewController = viewController;
     
     // Override point for customization after application launch.
     return YES;
