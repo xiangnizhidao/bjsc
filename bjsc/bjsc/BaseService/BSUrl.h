@@ -8,15 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define BS_Url [BSUrl getInstance]
-
-#ifdef DEBUG
-//测试
-#define HostUrl @""
-#else
-//发布
-#define HostUrl @""
-#endif
 
 @interface BSUrl : NSObject
 

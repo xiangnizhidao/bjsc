@@ -117,7 +117,12 @@ NSString* const POST = @"POST";
     [op addCompletionHandler:^(MKNetworkOperation *completedOperation) {
         @strongify(self)
         if([completedOperation responseData]) {
-            id dc = [completedOperation responseJSON];
+            NSString *Str = [[NSString alloc] initWithData:[completedOperation responseData] encoding:NSUTF8StringEncoding];
+            
+            NSArray *array =  [[[Str componentsSeparatedByString:@"("] lastObject] componentsSeparatedByString:@")"];
+            
+            NSData *data = [[array firstObject] dataUsingEncoding:NSUTF8StringEncoding];
+            id dc = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];;
             NSLog(@"server response: %@", dc);
             if([dc isKindOfClass:[NSDictionary class]])
             {

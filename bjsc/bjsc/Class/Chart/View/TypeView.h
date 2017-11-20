@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TypeViewDelegate <NSObject>
+
+-(void)sendTypeWithString:(NSString *)str;
+
+@end
+
 @interface TypeView : UIView
+
+@property (nonatomic, weak) id <TypeViewDelegate> delegate;
 
 @end
