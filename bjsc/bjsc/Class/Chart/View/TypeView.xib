@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TypeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYI-4K-qsk">
+                    <rect key="frame" x="5" y="5" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="wJh-h6-ecI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="重庆时时彩">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="fQd-xi-pIc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1v-XO-XlB">
+                    <rect key="frame" x="128.5" y="5" width="118" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="rMR-ET-132"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="天津时时彩">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="OR5-fS-kC9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpP-Yr-G33">
+                    <rect key="frame" x="251.5" y="5" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="tLL-NQ-5ds"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="新疆时时彩">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="VKb-YE-Ywu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNx-NF-hvg">
+                    <rect key="frame" x="5" y="30" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="CVA-PT-IBA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="5分彩">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="aAO-eg-u7T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaf-jd-LFQ">
+                    <rect key="frame" x="128.5" y="30" width="118" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="O02-BG-cGW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="体彩P5">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="LMK-Nl-1LF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFW-Fc-kie">
+                    <rect key="frame" x="251.5" y="30" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="qHU-iR-kfn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="北京五分彩">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="ubX-qj-yFc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krM-TR-03d">
+                    <rect key="frame" x="5" y="55" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="o6D-Rd-J10"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="北京PK10">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="YnJ-yU-mya"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVb-te-r80">
+                    <rect key="frame" x="128.5" y="55" width="118" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="pkL-HX-7hH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="福彩3D">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ajg-HV-5pt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGt-vU-Z8l">
+                    <rect key="frame" x="251.5" y="55" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="5VH-cv-JQc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="体彩P3">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="3U9-Nq-UAP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxY-2T-pIx">
+                    <rect key="frame" x="5" y="80" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="dig-Yl-Bxl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="广东11选5">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="kLd-ir-f0t"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGv-Vh-8ap">
+                    <rect key="frame" x="128.5" y="80" width="118" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Yak-uN-fl0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="江西11选5">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="fbj-WN-dVk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m74-my-wDr">
+                    <rect key="frame" x="251.5" y="80" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="iVi-1W-HCC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="山东11选5">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="A4L-0l-f2e"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yl-yF-NJC">
+                    <rect key="frame" x="5" y="105" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="lSg-DU-F9T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="上海11选5">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="hlP-Rq-tNR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpY-Fv-H5k">
+                    <rect key="frame" x="128.5" y="105" width="118" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="zTQ-FP-xMa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="江苏快3">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="3bA-lX-wgA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sy6-uV-k08">
+                    <rect key="frame" x="251.5" y="105" width="118.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="gR6-AU-Xcq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="广西快3">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="typeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="I36-8l-Krf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="X1v-XO-XlB" firstAttribute="leading" secondItem="xYI-4K-qsk" secondAttribute="trailing" constant="5" id="0AN-da-gVH"/>
+                <constraint firstItem="Sy6-uV-k08" firstAttribute="top" secondItem="m74-my-wDr" secondAttribute="bottom" constant="5" id="0Pm-Bj-ASb"/>
+                <constraint firstItem="GpY-Fv-H5k" firstAttribute="width" secondItem="7Yl-yF-NJC" secondAttribute="width" id="1w0-Tk-pwb"/>
+                <constraint firstItem="PGv-Vh-8ap" firstAttribute="leading" secondItem="cxY-2T-pIx" secondAttribute="trailing" constant="5" id="2Y9-eq-vvg"/>
+                <constraint firstItem="xYI-4K-qsk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="3LO-5k-p6G"/>
+                <constraint firstItem="LFW-Fc-kie" firstAttribute="top" secondItem="hpP-Yr-G33" secondAttribute="bottom" constant="5" id="4K4-2V-zoX"/>
+                <constraint firstAttribute="trailing" secondItem="m74-my-wDr" secondAttribute="trailing" constant="5" id="52r-nb-BXM"/>
+                <constraint firstItem="m74-my-wDr" firstAttribute="width" secondItem="cxY-2T-pIx" secondAttribute="width" id="5a0-Hw-hA6"/>
+                <constraint firstItem="JNx-NF-hvg" firstAttribute="top" secondItem="xYI-4K-qsk" secondAttribute="bottom" constant="5" id="7MD-2w-aKS"/>
+                <constraint firstItem="krM-TR-03d" firstAttribute="top" secondItem="JNx-NF-hvg" secondAttribute="bottom" constant="5" id="9i5-hB-ITG"/>
+                <constraint firstItem="Sy6-uV-k08" firstAttribute="width" secondItem="7Yl-yF-NJC" secondAttribute="width" id="Bby-s7-fmb"/>
+                <constraint firstItem="hpP-Yr-G33" firstAttribute="leading" secondItem="X1v-XO-XlB" secondAttribute="trailing" constant="5" id="D2j-tb-GGR"/>
+                <constraint firstItem="PGt-vU-Z8l" firstAttribute="width" secondItem="krM-TR-03d" secondAttribute="width" id="Ecj-LT-mLW"/>
+                <constraint firstItem="m74-my-wDr" firstAttribute="top" secondItem="PGt-vU-Z8l" secondAttribute="bottom" constant="5" id="G1V-X8-a2f"/>
+                <constraint firstItem="GpY-Fv-H5k" firstAttribute="leading" secondItem="7Yl-yF-NJC" secondAttribute="trailing" constant="5" id="Gld-fn-x0c"/>
+                <constraint firstItem="PGv-Vh-8ap" firstAttribute="top" secondItem="lVb-te-r80" secondAttribute="bottom" constant="5" id="HSp-Qk-H4f"/>
+                <constraint firstAttribute="trailing" secondItem="LFW-Fc-kie" secondAttribute="trailing" constant="5" id="I42-q8-vNM"/>
+                <constraint firstItem="lVb-te-r80" firstAttribute="top" secondItem="iaf-jd-LFQ" secondAttribute="bottom" constant="5" id="IbE-sr-EjH"/>
+                <constraint firstItem="X1v-XO-XlB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="IxG-yy-S5S"/>
+                <constraint firstItem="lVb-te-r80" firstAttribute="leading" secondItem="krM-TR-03d" secondAttribute="trailing" constant="5" id="JJx-p7-nnO"/>
+                <constraint firstItem="LFW-Fc-kie" firstAttribute="width" secondItem="JNx-NF-hvg" secondAttribute="width" id="Ky2-eK-Qm2"/>
+                <constraint firstItem="GpY-Fv-H5k" firstAttribute="top" secondItem="PGv-Vh-8ap" secondAttribute="bottom" constant="5" id="Q3r-zF-Sk5"/>
+                <constraint firstItem="Sy6-uV-k08" firstAttribute="leading" secondItem="GpY-Fv-H5k" secondAttribute="trailing" constant="5" id="TR3-ee-kGV"/>
+                <constraint firstItem="cxY-2T-pIx" firstAttribute="top" secondItem="krM-TR-03d" secondAttribute="bottom" constant="5" id="U7e-zc-pu9"/>
+                <constraint firstItem="xYI-4K-qsk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="UJM-al-PZe"/>
+                <constraint firstItem="hpP-Yr-G33" firstAttribute="width" secondItem="X1v-XO-XlB" secondAttribute="width" id="Wmj-pZ-p3Y"/>
+                <constraint firstItem="X1v-XO-XlB" firstAttribute="width" secondItem="xYI-4K-qsk" secondAttribute="width" id="Xf1-Ff-9LT"/>
+                <constraint firstItem="7Yl-yF-NJC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="aJI-NR-Qrm"/>
+                <constraint firstItem="PGv-Vh-8ap" firstAttribute="width" secondItem="cxY-2T-pIx" secondAttribute="width" id="aWw-sO-eM4"/>
+                <constraint firstAttribute="trailing" secondItem="hpP-Yr-G33" secondAttribute="trailing" constant="5" id="bzS-X5-hJo"/>
+                <constraint firstAttribute="trailing" secondItem="Sy6-uV-k08" secondAttribute="trailing" constant="5" id="ehz-e8-cAr"/>
+                <constraint firstItem="iaf-jd-LFQ" firstAttribute="leading" secondItem="JNx-NF-hvg" secondAttribute="trailing" constant="5" id="gKu-6v-9EI"/>
+                <constraint firstAttribute="trailing" secondItem="PGt-vU-Z8l" secondAttribute="trailing" constant="5" id="gNQ-wx-qyn"/>
+                <constraint firstItem="PGt-vU-Z8l" firstAttribute="leading" secondItem="lVb-te-r80" secondAttribute="trailing" constant="5" id="gPO-Zm-ACY"/>
+                <constraint firstItem="LFW-Fc-kie" firstAttribute="leading" secondItem="iaf-jd-LFQ" secondAttribute="trailing" constant="5" id="heC-tE-Kaq"/>
+                <constraint firstItem="lVb-te-r80" firstAttribute="width" secondItem="krM-TR-03d" secondAttribute="width" id="hq3-r8-gtI"/>
+                <constraint firstItem="JNx-NF-hvg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="kPZ-Jc-vg7"/>
+                <constraint firstItem="7Yl-yF-NJC" firstAttribute="top" secondItem="cxY-2T-pIx" secondAttribute="bottom" constant="5" id="kyJ-n8-tfb"/>
+                <constraint firstItem="hpP-Yr-G33" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="rnN-g3-qNT"/>
+                <constraint firstItem="iaf-jd-LFQ" firstAttribute="width" secondItem="JNx-NF-hvg" secondAttribute="width" id="sPs-pA-7ea"/>
+                <constraint firstItem="krM-TR-03d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="uTu-aT-8vi"/>
+                <constraint firstItem="cxY-2T-pIx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="wug-dy-H8B"/>
+                <constraint firstItem="m74-my-wDr" firstAttribute="leading" secondItem="PGv-Vh-8ap" secondAttribute="trailing" constant="5" id="xbA-tp-Ivf"/>
+                <constraint firstItem="PGt-vU-Z8l" firstAttribute="top" secondItem="LFW-Fc-kie" secondAttribute="bottom" constant="5" id="xx8-8v-BA2"/>
+                <constraint firstItem="iaf-jd-LFQ" firstAttribute="top" secondItem="X1v-XO-XlB" secondAttribute="bottom" constant="5" id="xyT-RS-g3v"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+</document>
