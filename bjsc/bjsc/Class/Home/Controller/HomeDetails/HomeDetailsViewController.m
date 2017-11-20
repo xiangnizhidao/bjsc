@@ -9,18 +9,26 @@
 #import "HomeDetailsViewController.h"
 #import "HomeDetailsTableViewCell.h"
 #import "HomeDetailsTwoTableViewCell.h"
+#import "LSNetworkService.h"
 
 @interface HomeDetailsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tabV;
 @property (strong, nonatomic) NSDictionary *dataDic;
+@property (strong, nonatomic) NSMutableArray *dataArr;
 @end
 
 @implementation HomeDetailsViewController
 
+- (NSMutableArray *)dataArr {
+    if (_dataArr == nil) {
+        self.dataArr = [NSMutableArray array];
+    }
+    return _dataArr;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.dataDic = @{@"oc_expect":@"2017314",@"oc_code":@"5,28,0,34,43,2,3,23,2,7",@"oc_addtime":@"2017-11-17 20:41:03"};
     [self creatTableView];
     // Do any additional setup after loading the view from its nib.
 }
@@ -36,14 +44,34 @@
     [self.tabV registerNib:[UINib nibWithNibName:@"HomeDetailsTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"HomeDetailsTableViewCell"];
     [self.tabV registerNib:[UINib nibWithNibName:@"HomeDetailsTwoTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"HomeDetailsTwoTableViewCell"];
     self.tabV.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [self detailsRequest];
+        [self detailsRequest:self.detailsM.cpKey];
     }];
     [self.tabV.mj_header beginRefreshing];
 }
 
-- (void)detailsRequest {
-    
-    [self.tabV.mj_header endRefreshing];
+- (void)detailsRequest:(NSString *)keyType {
+    [LSNetworkService getRequestHomeDetailsWithType:keyType response:^(id dict, BSError *error) {
+        NSLog(@"%@",dict);
+
+        if ([[NSString stringWithFormat:@"%@",dict[@"state"]] isEqualToString:@"1"]) {
+            NSArray *arr = dict[@"data"];
+            if (self.dataArr != nil && [self.dataArr count] == 0) {
+                [self.dataArr removeAllObjects];
+            }
+            //  遍历
+            for (int i = 0; arr.count > i; i++) {
+                NSDictionary *Dic = [arr objectAtIndex:i];
+                HomeDetailsModel *homeM = [HomeDetailsModel mj_objectWithKeyValues:Dic];
+                [self.dataArr addObject:homeM];
+            }
+            NSLog(@"%@",self.dataArr);
+            [self.tabV reloadData];
+            [self.tabV.mj_header endRefreshing];
+        }else{
+
+        }
+    }];
+
 }
 
 
@@ -64,7 +92,7 @@
 
 //  返回行数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return self.dataArr.count;
 }
 
 //  尾部高度
@@ -94,15 +122,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         HomeDetailsTableViewCell *cell = [self.tabV dequeueReusableCellWithIdentifier:@"HomeDetailsTableViewCell" forIndexPath:indexPath];
-        HomeDetailsModel *model = [HomeDetailsModel mj_objectWithKeyValues:self.dataDic];
+        HomeDetailsModel *model = [self.dataArr objectAtIndex:0];
         [cell homeDetailsCellWithName:self.detailsM.name];
         [cell homeDetailsCellWithModel:model];
         return cell;
+    }else{
+        HomeDetailsTwoTableViewCell *twoCell = [self.tabV dequeueReusableCellWithIdentifier:@"HomeDetailsTwoTableViewCell" forIndexPath:indexPath];
+        HomeDetailsModel *twomodel = [self.dataArr objectAtIndex:indexPath.row];
+        [twoCell homeDetailsTwoCellWithModel:twomodel];
+        return twoCell;
+        
     }
-    HomeDetailsTwoTableViewCell *twoCell = [self.tabV dequeueReusableCellWithIdentifier:@"HomeDetailsTwoTableViewCell" forIndexPath:indexPath];
-    HomeDetailsModel *twomodel = [HomeDetailsModel mj_objectWithKeyValues:self.dataDic];
-    [twoCell homeDetailsTwoCellWithModel:twomodel];
-    return twoCell;
 }
 
 
