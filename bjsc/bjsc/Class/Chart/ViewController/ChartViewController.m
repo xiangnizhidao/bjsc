@@ -10,7 +10,7 @@
 #import "HeaderView.h"
 #import "TypeView.h"
 
-@interface ChartViewController ()
+@interface ChartViewController ()<TypeViewDelegate>
 
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UIImageView *image;
@@ -37,6 +37,9 @@
     [view addSubview:self.button];
     [view addSubview:self.image];
     self.navigationItem.titleView = view;
+    [LSNetworkService getInformationWithType:@"1" response:^(id dict, BSError *error) {
+        NSLog(@"%@",dict);
+    }];
 }
 
 static int i = 0;
@@ -45,12 +48,17 @@ static int i = 0;
     if (i == 0) {
         self.typeView = [TypeView xx_loadFromNibWithOwner:nil];
         self.typeView.frame = CGRectMake(0, 0,self.view.frame.size.width , 130);
+        self.typeView.delegate = self;
         [self.view addSubview:self.typeView];
         i++;
     }else{
         [self.typeView removeFromSuperview];
         i--;
     }
+}
+
+-(void)sendTypeWithString:(NSString *)str
+{
     
 }
 

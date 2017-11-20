@@ -11,5 +11,16 @@
 
 @implementation LSNetworkService
 
++ (void)getInformationWithType:(NSString *)type response:(BSResponse)response
+{
+    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0];
+    long a = [date timeIntervalSince1970] * 1000;
+    NSString *str = [NSString stringWithFormat:@"%@key=%@&_=%@",HostUrl,type,@(a)];
+    //发送请求
+    [BS_HttpService sendGetWithURL:str httpHeader:nil response:^(id dict, BSError *error) {
+        response(dict, error);
+    }];
+}
+
 
 @end
