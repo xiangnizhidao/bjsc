@@ -10,6 +10,9 @@
 
 @implementation HeaderView
 
+- (IBAction)headerType:(UIButton *)sender {
+    [self.delegate sendHeaderTypeWithString:[NSString stringWithFormat:@"%ld",sender.tag - 2000]];
+}
 
 
 @end

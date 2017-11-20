@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol HeaderViewDelegate <NSObject>
+
+-(void)sendHeaderTypeWithString:(NSString *)str;
+
+@end
+
 @interface HeaderView : UIView
+
+@property (nonatomic, weak) id <HeaderViewDelegate> delegate;
 
 @end

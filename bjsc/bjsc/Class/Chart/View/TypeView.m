@@ -13,7 +13,7 @@
 - (IBAction)typeChoose:(UIButton *)sender
 {
     NSString *str = [NSString stringWithFormat:@"%ld",sender.tag - 1000];
-    [self.delegate sendTypeWithString:str];
+    [self.delegate sendTypeWithString:str name:sender.titleLabel.text];
 }
 
 

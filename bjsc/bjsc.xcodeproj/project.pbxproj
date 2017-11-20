@@ -70,6 +70,11 @@
 		2428DFE21FC26CBB000B3408 /* UtilFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428DFCA1FC26CBB000B3408 /* UtilFunc.m */; };
 		2428DFE51FC26D4B000B3408 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428DFE41FC26D4A000B3408 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2428DFE81FC26F32000B3408 /* LSNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428DFE71FC26F32000B3408 /* LSNetworkService.m */; };
+		2428DFEB1FC28874000B3408 /* NumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428DFEA1FC28874000B3408 /* NumberView.m */; };
+		2428DFED1FC2887F000B3408 /* NumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2428DFEC1FC2887F000B3408 /* NumberView.xib */; };
+		2428DFF11FC2890E000B3408 /* NumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428DFEF1FC2890E000B3408 /* NumberTableViewCell.m */; };
+		2428DFF21FC2890E000B3408 /* NumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2428DFF01FC2890E000B3408 /* NumberTableViewCell.xib */; };
+		2428DFF51FC28BA5000B3408 /* ChartViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428DFF41FC28BA5000B3408 /* ChartViewModel.m */; };
 		243EFCA71FBD30E300DB995A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 243EFCA61FBD30E300DB995A /* AppDelegate.m */; };
 		243EFCAA1FBD30E300DB995A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243EFCA91FBD30E300DB995A /* ViewController.m */; };
 		243EFCAD1FBD30E300DB995A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243EFCAB1FBD30E300DB995A /* Main.storyboard */; };
@@ -194,6 +199,14 @@
 		2428DFE41FC26D4A000B3408 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		2428DFE61FC26F32000B3408 /* LSNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetworkService.h; sourceTree = "<group>"; };
 		2428DFE71FC26F32000B3408 /* LSNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetworkService.m; sourceTree = "<group>"; };
+		2428DFE91FC28874000B3408 /* NumberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberView.h; sourceTree = "<group>"; };
+		2428DFEA1FC28874000B3408 /* NumberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberView.m; sourceTree = "<group>"; };
+		2428DFEC1FC2887F000B3408 /* NumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberView.xib; sourceTree = "<group>"; };
+		2428DFEE1FC2890E000B3408 /* NumberTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberTableViewCell.h; sourceTree = "<group>"; };
+		2428DFEF1FC2890E000B3408 /* NumberTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberTableViewCell.m; sourceTree = "<group>"; };
+		2428DFF01FC2890E000B3408 /* NumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberTableViewCell.xib; sourceTree = "<group>"; };
+		2428DFF31FC28BA5000B3408 /* ChartViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ChartViewModel.h; path = bjsc/Class/Chart/View/ChartViewModel.h; sourceTree = SOURCE_ROOT; };
+		2428DFF41FC28BA5000B3408 /* ChartViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ChartViewModel.m; path = bjsc/Class/Chart/View/ChartViewModel.m; sourceTree = SOURCE_ROOT; };
 		243EFCA21FBD30E300DB995A /* bjsc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bjsc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243EFCA51FBD30E300DB995A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		243EFCA61FBD30E300DB995A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -247,6 +260,8 @@
 		0980F5A61FC1146900714528 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2428DFF31FC28BA5000B3408 /* ChartViewModel.h */,
+				2428DFF41FC28BA5000B3408 /* ChartViewModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +275,12 @@
 				2428DF2C1FC265DC000B3408 /* TypeView.h */,
 				2428DF2D1FC265DC000B3408 /* TypeView.m */,
 				2428DF2F1FC265E7000B3408 /* TypeView.xib */,
+				2428DFE91FC28874000B3408 /* NumberView.h */,
+				2428DFEA1FC28874000B3408 /* NumberView.m */,
+				2428DFEC1FC2887F000B3408 /* NumberView.xib */,
+				2428DFEE1FC2890E000B3408 /* NumberTableViewCell.h */,
+				2428DFEF1FC2890E000B3408 /* NumberTableViewCell.m */,
+				2428DFF01FC2890E000B3408 /* NumberTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -626,7 +647,9 @@
 				0C1647D61FC00EA100BC4B4D /* HomeDetailsViewController.xib in Resources */,
 				0980F5D11FC1163800714528 /* LSTitleContentTableViewCell.xib in Resources */,
 				0CA438BC1FBFD4A700AFACB0 /* HomeCollectionViewCell.xib in Resources */,
+				2428DFF21FC2890E000B3408 /* NumberTableViewCell.xib in Resources */,
 				0980F5D61FC121D500714528 /* HeaderView.xib in Resources */,
+				2428DFED1FC2887F000B3408 /* NumberView.xib in Resources */,
 				243EFCB21FBD30E300DB995A /* LaunchScreen.storyboard in Resources */,
 				0C1647E31FC037F800BC4B4D /* homeData.plist in Resources */,
 				0980F5AC1FC114BE00714528 /* ChartViewController.xib in Resources */,
@@ -712,14 +735,17 @@
 				2428DFDF1FC26CBB000B3408 /* ESOpenUDID.m in Sources */,
 				0980F5D01FC1163800714528 /* LSTitleContentTableViewCell.m in Sources */,
 				243EFCB51FBD30E300DB995A /* main.m in Sources */,
+				2428DFF11FC2890E000B3408 /* NumberTableViewCell.m in Sources */,
 				2428DFCB1FC26CBB000B3408 /* LPSystemManager.m in Sources */,
 				243EFCA71FBD30E300DB995A /* AppDelegate.m in Sources */,
 				0980F5CE1FC1163800714528 /* BSRefreshHeader.m in Sources */,
 				2428DFCF1FC26CBB000B3408 /* NSDictionary+NullReplacement.m in Sources */,
 				2428DFD21FC26CBB000B3408 /* NSString+WSString.m in Sources */,
 				2428DF411FC26AFB000B3408 /* LPRequest.m in Sources */,
+				2428DFEB1FC28874000B3408 /* NumberView.m in Sources */,
 				0CA438C51FBFDAA800AFACB0 /* HomeViewController.m in Sources */,
 				0980F5C71FC1163800714528 /* BSTabBarController.m in Sources */,
+				2428DFF51FC28BA5000B3408 /* ChartViewModel.m in Sources */,
 				2428DFE51FC26D4B000B3408 /* JSONKit.m in Sources */,
 				2428DF401FC26AFB000B3408 /* BSUrl.m in Sources */,
 				2428DFD91FC26CBB000B3408 /* UINavigationBar+Awesome.m in Sources */,

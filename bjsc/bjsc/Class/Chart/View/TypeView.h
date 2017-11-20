@@ -10,7 +10,7 @@
 
 @protocol TypeViewDelegate <NSObject>
 
--(void)sendTypeWithString:(NSString *)str;
+-(void)sendTypeWithString:(NSString *)str name:(NSString *)name;
 
 @end
 
