@@ -62,7 +62,7 @@
     [self.view addSubview:self.tableView];
     [self.tableView registerNib:[NumberTableViewCell xx_nib] forCellReuseIdentifier:@"NumberTableViewCell"];
     self.hearerViewTag = 1001;
-    self.number = 9;
+    self.number = 10;
     self.headerNumber = 5;
 }
 
@@ -91,6 +91,9 @@
             [self.headerView viewWithTag:2001 + j].hidden = YES;
         }
     }
+    UIButton *button = (UIButton *)[self.headerView viewWithTag:2001];
+    button.backgroundColor = [UIColor redColor];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 static int i = 0;
@@ -118,19 +121,19 @@ static int i = 0;
     [self.typeView removeFromSuperview];
     i = 0;
     if ([str integerValue] == 20) {
-        self.number = 10;
-        self.headerNumber = 5;
-    }else if ([str integerValue] == 5 ||[str integerValue] == 6 ||[str integerValue] == 14 ||[str integerValue] == 15 ){
         self.number = 11;
         self.headerNumber = 5;
+    }else if ([str integerValue] == 5 ||[str integerValue] == 6 ||[str integerValue] == 14 ||[str integerValue] == 15 ){
+        self.number = 12;
+        self.headerNumber = 5;
     }else if ([str integerValue] == 7 ||[str integerValue] == 18){
-        self.number = 6;
+        self.number = 7;
         self.headerNumber = 3;
     }else if ([str integerValue] == 3 ||[str integerValue] == 4){
-        self.number = 9;
+        self.number = 10;
         self.headerNumber = 3;
     }else{
-        self.number = 9;
+        self.number = 10;
         self.headerNumber = 5;
     }
     for (int j = 0; j < 5; j ++) {
@@ -142,6 +145,7 @@ static int i = 0;
     }
     [LSNetworkService getInformationWithType:str response:^(id dict, BSError *error) {
         self.modelArray = [NSMutableArray array];
+        self.headerArray = [NSMutableArray array];
         for (NSDictionary *dic in dict[@"data"]) {
             ChartViewModel *model  = [[ChartViewModel alloc] init];
             model.addtime = dic[@"oc_addtime"];
@@ -149,6 +153,19 @@ static int i = 0;
             model.code_detailed = dic[@"oc_code_detailed"];
             model.expect = dic[@"oc_expect"];
             [self.modelArray addObject:model];
+            NSArray *array = [model.code componentsSeparatedByString:@","];
+            [self.headerArray addObject:array[0]];
+        }
+        for (int k = 0; k < self.headerNumber; k++) {
+            if (0 == k) {
+                UIButton *button = (UIButton *)[self.headerView viewWithTag:2000 + k + 1];
+                button.backgroundColor = [UIColor redColor];
+                [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            }else{
+                UIButton *button = (UIButton *)[self.headerView viewWithTag:2000 + k + 1];
+                button.backgroundColor = [UIColor whiteColor];
+                [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            }
         }
         [self.tableView reloadData];
     }];
@@ -156,7 +173,25 @@ static int i = 0;
 
 -(void)sendHeaderTypeWithString:(NSString *)str
 {
+    for (int k = 0; k < self.headerNumber; k++) {
+        if ([str integerValue] - 1 == k) {
+            UIButton *button = (UIButton *)[self.headerView viewWithTag:2000 + k + 1];
+            button.backgroundColor = [UIColor redColor];
+            [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        }else{
+            UIButton *button = (UIButton *)[self.headerView viewWithTag:2000 + k + 1];
+            button.backgroundColor = [UIColor whiteColor];
+            [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        }
+    }
     
+    self.headerArray = [NSMutableArray array];
+    for (int j = 0; j < self.modelArray.count; j ++) {
+        ChartViewModel *model = self.modelArray[j];
+        NSArray *array = [model.code componentsSeparatedByString:@","];
+        [self.headerArray addObject:array[[str integerValue] - 1]];
+    }
+    [self.tableView reloadData];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -183,10 +218,21 @@ static int i = 0;
     CGFloat width1 = (self.view.frame.size.width - cell.numberLabel.frame.size.width - cell.numberLabel.frame.origin.x) / self.number;
     
     for (int z = 0; z < self.number; z ++) {
-        NumberView *numberView = [NumberView xx_loadFromNibWithOwner:nil];
-        numberView.frame = CGRectMake(cell.numberLabel.frame.size.width + cell.numberLabel.frame.origin.x + width1 * z, 10, width1, cell.numberLabel.frame.size.height);
-        [numberView.number setTitle:[NSString stringWithFormat:@"%d",z + 1] forState:UIControlStateNormal];
-        [cell addSubview:numberView];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(cell.numberLabel.frame.size.width + cell.numberLabel.frame.origin.x + width1 * z, 10, width1, cell.numberLabel.frame.size.height);
+        [button setTitle:[NSString stringWithFormat:@"%d",z] forState:UIControlStateNormal];
+        if (z == [self.headerArray[indexPath.row] integerValue]) {
+            [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            button.backgroundColor = [UIColor redColor];
+        }else{
+            [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        }
+        button.titleLabel.font = [UIFont systemFontOfSize:13.0];
+        button.userInteractionEnabled = NO;
+        UIView * view = [[UIView alloc] initWithFrame:CGRectMake(cell.numberLabel.frame.size.width + cell.numberLabel.frame.origin.x + width1 * z, 10, 1, cell.numberLabel.frame.size.height)];
+        view.backgroundColor = [UIColor grayColor];
+        [cell addSubview:button];
+        [cell addSubview:view];
     }
     
     return cell;

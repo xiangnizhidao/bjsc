@@ -55,6 +55,14 @@ A different license may apply to other software included in this package,
 including GHUnit and Andrew Donoho's Reachability class. Please consult their 
 respective headers for the terms of their individual licenses.
 
+## JCore
+
+Copyright jpush.cn
+
+## JPush
+
+Copyright jpush.cn
+
 ## MBProgressHUD
 
 Copyright © 2009-2016 Matej Bukovinski

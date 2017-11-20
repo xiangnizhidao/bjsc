@@ -32,5 +32,14 @@
     }];
 }
 
++ (void)getFirstUrlresponse:(BSResponse)response
+{
+    NSString *str = [NSString stringWithFormat:@"%@%@",firstURL,@""];
+    //发送请求
+    [BS_HttpService sendGetWithURL:str httpHeader:nil response:^(id dict, BSError *error) {
+        response(dict, error);
+    }];
+}
+
 
 @end
