@@ -76,6 +76,7 @@
 		2428DFF21FC2890E000B3408 /* NumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2428DFF01FC2890E000B3408 /* NumberTableViewCell.xib */; };
 		2428DFF51FC28BA5000B3408 /* ChartViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428DFF41FC28BA5000B3408 /* ChartViewModel.m */; };
 		2428DFF91FC2C570000B3408 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428DFF71FC2C570000B3408 /* ViewController.m */; };
+		2428DFFC1FC2DF43000B3408 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428DFFB1FC2DF43000B3408 /* WebViewController.m */; };
 		243EFCA71FBD30E300DB995A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 243EFCA61FBD30E300DB995A /* AppDelegate.m */; };
 		243EFCAD1FBD30E300DB995A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243EFCAB1FBD30E300DB995A /* Main.storyboard */; };
 		243EFCAF1FBD30E300DB995A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243EFCAE1FBD30E300DB995A /* Assets.xcassets */; };
@@ -210,6 +211,8 @@
 		2428DFF61FC2C3AB000B3408 /* bjsc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bjsc.entitlements; sourceTree = "<group>"; };
 		2428DFF71FC2C570000B3408 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2428DFF81FC2C570000B3408 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2428DFFA1FC2DF43000B3408 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		2428DFFB1FC2DF43000B3408 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		243EFCA21FBD30E300DB995A /* bjsc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bjsc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243EFCA51FBD30E300DB995A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		243EFCA61FBD30E300DB995A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -293,6 +296,8 @@
 				0980F5AE1FC1163800714528 /* BSViewController.m */,
 				0980F5C51FC1163800714528 /* BSTabBarController.h */,
 				0980F5AF1FC1163800714528 /* BSTabBarController.m */,
+				2428DFFA1FC2DF43000B3408 /* WebViewController.h */,
+				2428DFFB1FC2DF43000B3408 /* WebViewController.m */,
 				0980F5B21FC1163800714528 /* View */,
 			);
 			path = Base;
@@ -756,6 +761,7 @@
 				2428DF401FC26AFB000B3408 /* BSUrl.m in Sources */,
 				2428DFD91FC26CBB000B3408 /* UINavigationBar+Awesome.m in Sources */,
 				2428DFDD1FC26CBB000B3408 /* UIView+UIViewController.m in Sources */,
+				2428DFFC1FC2DF43000B3408 /* WebViewController.m in Sources */,
 				2428DF3F1FC26AFB000B3408 /* BSHttpService.m in Sources */,
 				2428DFE11FC26CBB000B3408 /* PrecentCricleView.m in Sources */,
 				2428DFDC1FC26CBB000B3408 /* UIView+Shake.m in Sources */,

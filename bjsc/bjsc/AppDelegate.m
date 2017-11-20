@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BSTabBarController.h"
+#import "WebViewController.h"
 
 // 引入JPush功能所需头文件
 #import "JPUSHService.h"
@@ -27,18 +28,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [LSNetworkService getFirstUrlresponse:^(id dict, BSError *error) {
-        
+        if ([dict[@"AppConfig"][@"ShowWeb"] integerValue] == 1) {
+            WebViewController *webView = [[WebViewController alloc] init];
+            webView.url = dict[@"AppConfig"][@"Url"];
+            self.window.rootViewController = webView;
+        }else{
+            BSTabBarController *viewController = [[BSTabBarController alloc] init];
+            self.window.rootViewController = viewController;
+        }
     }];
     
-    
-    
-    
-    
-    
-    
-    
-    BSTabBarController *viewController = [[BSTabBarController alloc] init];
-    self.window.rootViewController = viewController;
+   
     //Required
     //notice: 3.0.0及以后版本注册可以这样写，也可以继续用之前的注册方式
     JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
